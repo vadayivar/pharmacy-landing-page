@@ -1,0 +1,49 @@
+/* Reset default spacing and box model */
+::before,
+::after,
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Base typography */
+body {
+  font-family: "Roboto", sans-serif;
+}
+/* Header bar with logo + nav */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightgreen;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+ul {
+  display: flex;
+  gap: 20px;
+}
+/* Remove dots and increase font weight and size */
+li {
+  list-style: none;
+  font-weight: 600;
+  font-size: large;
+}
+/* Nav links remove default underline/color */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* Circular logo image */
+.logo {
+  width: 50px;
+  height: auto;
+  border-radius: 50%;
+}
